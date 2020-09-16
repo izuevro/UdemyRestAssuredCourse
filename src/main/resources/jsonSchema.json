@@ -1,0 +1,535 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "candidates": [
+        {
+          "formatted_address": "Нью-Йорк, США",
+          "geometry": {
+            "location": {
+              "lat": 40.7127753,
+              "lng": -74.0059728
+            },
+            "viewport": {
+              "northeast": {
+                "lat": 40.9175771,
+                "lng": -73.70027209999999
+              },
+              "southwest": {
+                "lat": 40.4773991,
+                "lng": -74.25908989999999
+              }
+            }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+          "name": "Нью-Йорк",
+          "photos": [
+            {
+              "height": 4608,
+              "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/101505661832265119747\">A Google User</a>"
+              ],
+              "photo_reference": "CmRaAAAALUF89TnxyPoQO18bCfyJK2tOqmEN2cn3lA2alz9q2YI5bFqffBGJ_BShGCrg2GGClv3GLeLyib0kORcsMgdC0k0QkXXpECerxzEM7rS6P0D_LgbpamRPiFNUAmi0FSWdEhBw0xOu-RXUDUGtLggs0xqpGhT9NTZTWaLjRkyuFVmPpqEeaWqRrQ",
+              "width": 3456
+            }
+          ],
+          "place_id": "ChIJOwg_06VPwokRYv534QaPC8g",
+          "types": [
+            "locality",
+            "political"
+          ]
+        }
+      ],
+      "status": "OK"
+    }
+  ],
+  "required": [
+    "candidates",
+    "status"
+  ],
+  "properties": {
+    "candidates": {
+      "$id": "#/properties/candidates",
+      "type": "array",
+      "title": "The candidates schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "formatted_address": "Нью-Йорк, США",
+            "geometry": {
+              "location": {
+                "lat": 40.7127753,
+                "lng": -74.0059728
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 40.9175771,
+                  "lng": -73.70027209999999
+                },
+                "southwest": {
+                  "lat": 40.4773991,
+                  "lng": -74.25908989999999
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+            "name": "Нью-Йорк",
+            "photos": [
+              {
+                "height": 4608,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/101505661832265119747\">A Google User</a>"
+                ],
+                "photo_reference": "CmRaAAAALUF89TnxyPoQO18bCfyJK2tOqmEN2cn3lA2alz9q2YI5bFqffBGJ_BShGCrg2GGClv3GLeLyib0kORcsMgdC0k0QkXXpECerxzEM7rS6P0D_LgbpamRPiFNUAmi0FSWdEhBw0xOu-RXUDUGtLggs0xqpGhT9NTZTWaLjRkyuFVmPpqEeaWqRrQ",
+                "width": 3456
+              }
+            ],
+            "place_id": "ChIJOwg_06VPwokRYv534QaPC8g",
+            "types": [
+              "locality",
+              "political"
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/candidates/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/candidates/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "formatted_address": "Нью-Йорк, США",
+                "geometry": {
+                  "location": {
+                    "lat": 40.7127753,
+                    "lng": -74.0059728
+                  },
+                  "viewport": {
+                    "northeast": {
+                      "lat": 40.9175771,
+                      "lng": -73.70027209999999
+                    },
+                    "southwest": {
+                      "lat": 40.4773991,
+                      "lng": -74.25908989999999
+                    }
+                  }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+                "name": "Нью-Йорк",
+                "photos": [
+                  {
+                    "height": 4608,
+                    "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/101505661832265119747\">A Google User</a>"
+                    ],
+                    "photo_reference": "CmRaAAAALUF89TnxyPoQO18bCfyJK2tOqmEN2cn3lA2alz9q2YI5bFqffBGJ_BShGCrg2GGClv3GLeLyib0kORcsMgdC0k0QkXXpECerxzEM7rS6P0D_LgbpamRPiFNUAmi0FSWdEhBw0xOu-RXUDUGtLggs0xqpGhT9NTZTWaLjRkyuFVmPpqEeaWqRrQ",
+                    "width": 3456
+                  }
+                ],
+                "place_id": "ChIJOwg_06VPwokRYv534QaPC8g",
+                "types": [
+                  "locality",
+                  "political"
+                ]
+              }
+            ],
+            "required": [
+              "formatted_address",
+              "geometry",
+              "icon",
+              "name",
+              "photos",
+              "place_id",
+              "types"
+            ],
+            "properties": {
+              "formatted_address": {
+                "$id": "#/properties/candidates/items/anyOf/0/properties/formatted_address",
+                "type": "string",
+                "title": "The formatted_address schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Нью-Йорк, США"
+                ]
+              },
+              "geometry": {
+                "$id": "#/properties/candidates/items/anyOf/0/properties/geometry",
+                "type": "object",
+                "title": "The geometry schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "location": {
+                      "lat": 40.7127753,
+                      "lng": -74.0059728
+                    },
+                    "viewport": {
+                      "northeast": {
+                        "lat": 40.9175771,
+                        "lng": -73.70027209999999
+                      },
+                      "southwest": {
+                        "lat": 40.4773991,
+                        "lng": -74.25908989999999
+                      }
+                    }
+                  }
+                ],
+                "required": [
+                  "location",
+                  "viewport"
+                ],
+                "properties": {
+                  "location": {
+                    "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/location",
+                    "type": "object",
+                    "title": "The location schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "lat": 40.7127753,
+                        "lng": -74.0059728
+                      }
+                    ],
+                    "required": [
+                      "lat",
+                      "lng"
+                    ],
+                    "properties": {
+                      "lat": {
+                        "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/location/properties/lat",
+                        "type": "number",
+                        "title": "The lat schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                          40.7127753
+                        ]
+                      },
+                      "lng": {
+                        "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/location/properties/lng",
+                        "type": "number",
+                        "title": "The lng schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                          -74.0059728
+                        ]
+                      }
+                    },
+                    "additionalProperties": true
+                  },
+                  "viewport": {
+                    "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/viewport",
+                    "type": "object",
+                    "title": "The viewport schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "northeast": {
+                          "lat": 40.9175771,
+                          "lng": -73.70027209999999
+                        },
+                        "southwest": {
+                          "lat": 40.4773991,
+                          "lng": -74.25908989999999
+                        }
+                      }
+                    ],
+                    "required": [
+                      "northeast",
+                      "southwest"
+                    ],
+                    "properties": {
+                      "northeast": {
+                        "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/viewport/properties/northeast",
+                        "type": "object",
+                        "title": "The northeast schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                          {
+                            "lat": 40.9175771,
+                            "lng": -73.70027209999999
+                          }
+                        ],
+                        "required": [
+                          "lat",
+                          "lng"
+                        ],
+                        "properties": {
+                          "lat": {
+                            "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/viewport/properties/northeast/properties/lat",
+                            "type": "number",
+                            "title": "The lat schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0.0,
+                            "examples": [
+                              40.9175771
+                            ]
+                          },
+                          "lng": {
+                            "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/viewport/properties/northeast/properties/lng",
+                            "type": "number",
+                            "title": "The lng schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0.0,
+                            "examples": [
+                              -73.70027209999999
+                            ]
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      "southwest": {
+                        "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/viewport/properties/southwest",
+                        "type": "object",
+                        "title": "The southwest schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                          {
+                            "lat": 40.4773991,
+                            "lng": -74.25908989999999
+                          }
+                        ],
+                        "required": [
+                          "lat",
+                          "lng"
+                        ],
+                        "properties": {
+                          "lat": {
+                            "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/viewport/properties/southwest/properties/lat",
+                            "type": "number",
+                            "title": "The lat schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0.0,
+                            "examples": [
+                              40.4773991
+                            ]
+                          },
+                          "lng": {
+                            "$id": "#/properties/candidates/items/anyOf/0/properties/geometry/properties/viewport/properties/southwest/properties/lng",
+                            "type": "number",
+                            "title": "The lng schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0.0,
+                            "examples": [
+                              -74.25908989999999
+                            ]
+                          }
+                        },
+                        "additionalProperties": true
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              },
+              "icon": {
+                "$id": "#/properties/candidates/items/anyOf/0/properties/icon",
+                "type": "string",
+                "title": "The icon schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png"
+                ]
+              },
+              "name": {
+                "$id": "#/properties/candidates/items/anyOf/0/properties/name",
+                "type": "string",
+                "title": "The name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Нью-Йорк"
+                ]
+              },
+              "photos": {
+                "$id": "#/properties/candidates/items/anyOf/0/properties/photos",
+                "type": "array",
+                "title": "The photos schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "height": 4608,
+                      "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101505661832265119747\">A Google User</a>"
+                      ],
+                      "photo_reference": "CmRaAAAALUF89TnxyPoQO18bCfyJK2tOqmEN2cn3lA2alz9q2YI5bFqffBGJ_BShGCrg2GGClv3GLeLyib0kORcsMgdC0k0QkXXpECerxzEM7rS6P0D_LgbpamRPiFNUAmi0FSWdEhBw0xOu-RXUDUGtLggs0xqpGhT9NTZTWaLjRkyuFVmPpqEeaWqRrQ",
+                      "width": 3456
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "height": 4608,
+                          "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/101505661832265119747\">A Google User</a>"
+                          ],
+                          "photo_reference": "CmRaAAAALUF89TnxyPoQO18bCfyJK2tOqmEN2cn3lA2alz9q2YI5bFqffBGJ_BShGCrg2GGClv3GLeLyib0kORcsMgdC0k0QkXXpECerxzEM7rS6P0D_LgbpamRPiFNUAmi0FSWdEhBw0xOu-RXUDUGtLggs0xqpGhT9NTZTWaLjRkyuFVmPpqEeaWqRrQ",
+                          "width": 3456
+                        }
+                      ],
+                      "required": [
+                        "height",
+                        "html_attributions",
+                        "photo_reference",
+                        "width"
+                      ],
+                      "properties": {
+                        "height": {
+                          "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items/anyOf/0/properties/height",
+                          "type": "integer",
+                          "title": "The height schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": 0,
+                          "examples": [
+                            4608
+                          ]
+                        },
+                        "html_attributions": {
+                          "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items/anyOf/0/properties/html_attributions",
+                          "type": "array",
+                          "title": "The html_attributions schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": [],
+                          "examples": [
+                            [
+                              "<a href=\"https://maps.google.com/maps/contrib/101505661832265119747\">A Google User</a>"
+                            ]
+                          ],
+                          "additionalItems": true,
+                          "items": {
+                            "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items/anyOf/0/properties/html_attributions/items",
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items/anyOf/0/properties/html_attributions/items/anyOf/0",
+                                "type": "string",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                  "<a href=\"https://maps.google.com/maps/contrib/101505661832265119747\">A Google User</a>"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "photo_reference": {
+                          "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items/anyOf/0/properties/photo_reference",
+                          "type": "string",
+                          "title": "The photo_reference schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "CmRaAAAALUF89TnxyPoQO18bCfyJK2tOqmEN2cn3lA2alz9q2YI5bFqffBGJ_BShGCrg2GGClv3GLeLyib0kORcsMgdC0k0QkXXpECerxzEM7rS6P0D_LgbpamRPiFNUAmi0FSWdEhBw0xOu-RXUDUGtLggs0xqpGhT9NTZTWaLjRkyuFVmPpqEeaWqRrQ"
+                          ]
+                        },
+                        "width": {
+                          "$id": "#/properties/candidates/items/anyOf/0/properties/photos/items/anyOf/0/properties/width",
+                          "type": "integer",
+                          "title": "The width schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": 0,
+                          "examples": [
+                            3456
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "place_id": {
+                "$id": "#/properties/candidates/items/anyOf/0/properties/place_id",
+                "type": "string",
+                "title": "The place_id schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ChIJOwg_06VPwokRYv534QaPC8g"
+                ]
+              },
+              "types": {
+                "$id": "#/properties/candidates/items/anyOf/0/properties/types",
+                "type": "array",
+                "title": "The types schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    "locality",
+                    "political"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/candidates/items/anyOf/0/properties/types/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/candidates/items/anyOf/0/properties/types/items/anyOf/0",
+                      "type": "string",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "locality",
+                        "political"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "status": {
+      "$id": "#/properties/status",
+      "type": "string",
+      "title": "The status schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "OK"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

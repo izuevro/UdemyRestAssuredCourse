@@ -1,0 +1,66 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="FindPlaceFromTextResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="candidates">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="name"/>
+                            <xs:element type="xs:string" name="type" maxOccurs="unbounded" minOccurs="0"/>
+                            <xs:element type="xs:string" name="formatted_address"/>
+                            <xs:element name="geometry">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="location">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:float" name="lat"/>
+                                                    <xs:element type="xs:float" name="lng"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="viewport">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="southwest">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:float" name="lat"/>
+                                                                <xs:element type="xs:float" name="lng"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="northeast">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:float" name="lat"/>
+                                                                <xs:element type="xs:float" name="lng"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="icon"/>
+                            <xs:element name="photo">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="photo_reference"/>
+                                        <xs:element type="xs:short" name="width"/>
+                                        <xs:element type="xs:short" name="height"/>
+                                        <xs:element type="xs:string" name="html_attribution"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="place_id"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="status"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
